@@ -77,6 +77,13 @@ ol.checks .a{color:var(--muted); font-size:.9rem}
 .reaction{background:var(--warn-soft); border-left:3px solid var(--warn); border-radius:0 8px 8px 0;
   padding:11px 15px; margin:12px 0 0; font-size:.92rem}
 .reaction .who{display:block; font-size:.78rem; color:var(--muted); margin-bottom:3px}
+.compare{display:grid; gap:24px; grid-template-columns:1fr}
+@media(min-width:760px){.compare{grid-template-columns:1fr 1fr}}
+.compare .card .body{padding:15px 17px 17px}
+.pick{display:inline-block; font-size:.74rem; font-weight:700; letter-spacing:.05em; border-radius:5px;
+  padding:3px 9px; margin-bottom:8px}
+.pick.a{background:var(--accent-soft); color:var(--accent)}
+.pick.b{background:var(--warn-soft); color:var(--warn)}
 footer{margin-top:60px; padding-top:22px; border-top:1px solid var(--line); color:var(--muted); font-size:.84rem}
 strong{color:var(--ink)}
 </style>
@@ -173,6 +180,46 @@ strong{color:var(--ink)}
   8/24のディレクションでは、<strong>この猫版モックを見ていただいた上で「もっとこういう感じ」という方向を引き出す</strong>のが目的になります。</p>
 </div>
 
+<h2>2本目のテイスト比較（アニメ / 実写風）</h2>
+<div class="note warn">
+  <p><strong>受注シートで「アニメーション」にチェックが入っているのは1本目だけです。</strong>
+  2本目・3本目は「広告系」のみで、アニメーション指定がありません。
+  上のモックは3本ともアニメ調で作っているため、<strong>2本目を実写風でも作りました</strong>。
+  <strong>テロップ・尺・構成は1文字も変えていません</strong>（比較対象をテイストだけに絞るため）。</p>
+</div>
+
+<div class="compare">
+  <div class="card">
+    <video controls preload="metadata" playsinline poster="videos/v2_poster.jpg">
+      <source src="videos/v2b.mp4" type="video/mp4">
+      <p>この環境では埋め込み再生ができません。<a href="videos/v2b.mp4">動画を直接開く</a></p>
+    </video>
+    <div class="body">
+      <span class="pick a">A ／ アニメ調</span>
+      <h3>3D CGアニメ</h3>
+      <p>1本目・3本目と揃うのでシリーズとして一番強い。自宅での失敗シーンをコミカルに描けるのが利点。</p>
+      <a class="dl" href="videos/v2b.mp4">動画を直接開く / 保存</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <video controls preload="metadata" playsinline poster="videos/v2r_poster.jpg">
+      <source src="videos/v2rb.mp4" type="video/mp4">
+      <p>この環境では埋め込み再生ができません。<a href="videos/v2rb.mp4">動画を直接開く</a></p>
+    </video>
+    <div class="body">
+      <span class="pick b">B ／ 実写風</span>
+      <h3>実写風フォト</h3>
+      <p>泡・濡れた毛・水滴の質感が出るぶん「実際にここで洗ってもらえる」が伝わりやすい。シートの「広告系」に近いのはこちら。</p>
+      <a class="dl" href="videos/v2rb.mp4">動画を直接開く / 保存</a>
+    </div>
+  </div>
+</div>
+
+<p style="color:var(--muted); font-size:.9rem">
+※ 3本目も同様に実写風へ振ることができます。<strong>2本目でどちらを採るか決まれば、3本目はそれに合わせます。</strong>
+</p>
+
 <h2>なぜこの形にしたか</h2>
 
 <div class="note">
@@ -214,7 +261,7 @@ strong{color:var(--ink)}
   <li><span class="q">CTAの主導線</span><span class="a">受注シート未記載。Instagram / LINE公式 / 電話 の3点併記で仮置き</span></li>
   <li><span class="q">「保護猫」の扱い</span><span class="a">社会活動として別枠に置いている解釈で問題ないか</span></li>
   <li><span class="q">料金訴求の根拠</span><span class="a">「大手より安い」を使うなら、自社料金と比較対象の確認が必要</span></li>
-  <li><span class="q">テイスト（★最優先）</span><span class="a">受注シートの「動画の雰囲気」は <strong>①＝アニメーション ／ ②＝広告系 ／ ③＝広告系</strong>。<strong>アニメ指定があるのは①だけ</strong>で、②③はアニメーションにチェックが入っていません。上のモックは<strong>3本ともアニメ調</strong>のため、②③は実写風に振る選択肢が残ります。<strong>比較用に2本目の実写風バージョンを別途制作中</strong>です</span></li>
+  <li><span class="q">テイスト（★最優先）</span><span class="a">受注シートの「動画の雰囲気」は <strong>①＝アニメーション ／ ②＝広告系 ／ ③＝広告系</strong>。<strong>アニメ指定があるのは①だけ</strong>で、②③はアニメーションにチェックが入っていません。上のモックは<strong>3本ともアニメ調</strong>のため、②③は実写風に振る選択肢が残ります。<strong>比較用に2本目の実写風バージョンを用意しました</strong>（上の「テイスト比較」）。ここで決まれば3本目も合わせます</span></li>
   <li><span class="q">お二人の出演可否</span><span class="a">実在のお二人には似せず、後ろ姿・手元中心のオリジナルキャラにしている。顔出しのご希望があるか</span></li>
   <li><span class="q">看板猫の有無</span><span class="a">いれば主役猫の毛色を合わせる（現在キジトラで仮置き）</span></li>
   <li><span class="q">代表者名の露出</span><span class="a">読みが特殊なため、動画内で名前を出すか・出すなら読みの扱いをどうするか</span></li>
