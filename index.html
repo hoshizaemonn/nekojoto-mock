@@ -67,6 +67,16 @@ ol.checks li::before{content:counter(c); position:absolute; left:0; top:14px; wi
 ol.checks li:last-child{border-bottom:none}
 ol.checks .q{font-weight:700; display:block}
 ol.checks .a{color:var(--muted); font-size:.9rem}
+.ref{background:var(--panel); border:1px solid var(--line); border-radius:14px; overflow:hidden; margin:0 0 18px}
+.ref .yt{position:relative; width:100%; aspect-ratio:16/9; background:#000}
+.ref .yt iframe{position:absolute; inset:0; width:100%; height:100%; border:0}
+.ref .body{padding:16px 20px 18px}
+.ref h3{margin:0 0 6px}
+.ref .src{font-size:.82rem; color:var(--muted); margin:0 0 10px}
+.ref .src a{color:var(--accent)}
+.reaction{background:var(--warn-soft); border-left:3px solid var(--warn); border-radius:0 8px 8px 0;
+  padding:11px 15px; margin:12px 0 0; font-size:.92rem}
+.reaction .who{display:block; font-size:.78rem; color:var(--muted); margin-bottom:3px}
 footer{margin-top:60px; padding-top:22px; border-top:1px solid var(--line); color:var(--muted); font-size:.84rem}
 strong{color:var(--ink)}
 </style>
@@ -133,13 +143,37 @@ strong{color:var(--ink)}
 
 </div>
 
-<h2>なぜこの形にしたか</h2>
+<h2>参考にした動画</h2>
+<p>受注シートの「現場で見せた動画」欄に記載されていた1本です。<strong>今回のモックはこれを起点にしています。</strong></p>
+
+<div class="ref">
+  <div class="yt">
+    <iframe src="https://www.youtube-nocookie.com/embed/yreXcJYsm4M" title="現場で見せた参考動画"
+      loading="lazy" allowfullscreen
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+  </div>
+  <div class="body">
+    <h3>PetSalonby2 3 1FIX</h3>
+    <p class="src">チャンネル: R-A-D ／ <a href="https://www.youtube.com/watch?v=yreXcJYsm4M" target="_blank" rel="noopener">YouTubeで開く</a>　<span style="color:var(--accent)">生存確認済み（2026-08-20）</span></p>
+    <p>正体は <strong>Petsalon J&amp;C 様（当社の既存クライアント・犬のトリミングサロン）のAI動画</strong>でした。</p>
+    <div class="reaction">
+      <span class="who">これを見せたときのクライアントの反応（受注シートより）</span>
+      「ここは犬メインなんですねー」
+    </div>
+    <p class="why" style="margin-top:12px; color:var(--ink)">
+      つまり<strong>参考動画そのものは刺さっていて、業態だけが違った</strong>ということです。
+      猫版の実物が存在しなかっただけなので、それを3本作ったのが上のモックです。
+      主役を犬から猫に置き換え、猫特有の導線（脱走・猫は洗いにくい・預け先がない）に組み替えています。
+    </p>
+  </div>
+</div>
 
 <div class="note">
-  <p><strong>現場で見せた参考動画は、犬のペットサロンのものでした。</strong></p>
-  <p>ヒアリングシートに記載された参考動画は、当社の既存クライアント Petsalon J&amp;C 様（犬のトリミングサロン）のAI動画でした。
-  「ここは犬メインなんですねー」という反応は、単に<strong>猫版の実物が存在しなかった</strong>だけです。このモックがその答えになります。</p>
+  <p><strong>参考動画はこの1本だけです。</strong>受注シートに記載があったのがこれのみで、他に候補は提示されていません。
+  8/24のディレクションでは、<strong>この猫版モックを見ていただいた上で「もっとこういう感じ」という方向を引き出す</strong>のが目的になります。</p>
 </div>
+
+<h2>なぜこの形にしたか</h2>
 
 <div class="note">
   <p><strong>Instagram の実査で、受注シートにない情報が3つ取れました。</strong></p>
@@ -180,7 +214,7 @@ strong{color:var(--ink)}
   <li><span class="q">CTAの主導線</span><span class="a">受注シート未記載。Instagram / LINE公式 / 電話 の3点併記で仮置き</span></li>
   <li><span class="q">「保護猫」の扱い</span><span class="a">社会活動として別枠に置いている解釈で問題ないか</span></li>
   <li><span class="q">料金訴求の根拠</span><span class="a">「大手より安い」を使うなら、自社料金と比較対象の確認が必要</span></li>
-  <li><span class="q">テイスト（★要注意）</span><span class="a">受注シートの「動画の雰囲気」は <strong>①＝アニメーション ／ ②＝広告系 ／ ③＝広告系</strong>。<strong>アニメ指定があるのは①だけ</strong>で、②③はアニメーションにチェックが入っていません。本モックは3本ともアニメ調で作成しているため、<strong>②③は実写風に振る選択肢が残ります</strong>。ここを最優先で確認します</span></li>
+  <li><span class="q">テイスト（★最優先）</span><span class="a">受注シートの「動画の雰囲気」は <strong>①＝アニメーション ／ ②＝広告系 ／ ③＝広告系</strong>。<strong>アニメ指定があるのは①だけ</strong>で、②③はアニメーションにチェックが入っていません。上のモックは<strong>3本ともアニメ調</strong>のため、②③は実写風に振る選択肢が残ります。<strong>比較用に2本目の実写風バージョンを別途制作中</strong>です</span></li>
   <li><span class="q">お二人の出演可否</span><span class="a">実在のお二人には似せず、後ろ姿・手元中心のオリジナルキャラにしている。顔出しのご希望があるか</span></li>
   <li><span class="q">看板猫の有無</span><span class="a">いれば主役猫の毛色を合わせる（現在キジトラで仮置き）</span></li>
   <li><span class="q">代表者名の露出</span><span class="a">読みが特殊なため、動画内で名前を出すか・出すなら読みの扱いをどうするか</span></li>
