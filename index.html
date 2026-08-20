@@ -80,6 +80,10 @@ ol.checks .a{color:var(--muted); font-size:.9rem}
 .compare{display:grid; gap:24px; grid-template-columns:1fr}
 @media(min-width:760px){.compare{grid-template-columns:1fr 1fr}}
 .compare .card .body{padding:15px 17px 17px}
+.vt{font-size:1.05rem; margin:34px 0 6px; display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+.vt .tag{margin:0}
+.vsheet{font-size:.86rem; color:var(--muted); margin:0 0 6px}
+.vwhy{font-size:.92rem; margin:0 0 14px}
 .pick{display:inline-block; font-size:.74rem; font-weight:700; letter-spacing:.05em; border-radius:5px;
   padding:3px 9px; margin-bottom:8px}
 .pick.a{background:var(--accent-soft); color:var(--accent)}
@@ -103,9 +107,17 @@ strong{color:var(--ink)}
 1本目を確定させれば2・3本目は横展開で済むため、<strong>ディレクション1回で3本ぶんのヒアリングが成立する</strong>という判断の根拠そのものです。
 </p>
 
-<h2>3本のモック</h2>
-<div class="videos">
+<h2>3本 × 2テイスト</h2>
+<div class="note warn">
+  <p><strong>受注シートで「アニメーション」にチェックが入っているのは1本目だけです。</strong>
+  2本目・3本目は「広告系」のみでアニメーション指定がありません。そこで<strong>3本すべてをアニメ調と実写風の両方で作りました</strong>。
+  <strong>カット割り・テロップ・尺は左右で1文字も変えていません</strong>（比べる対象をテイストだけに絞るため）。</p>
+</div>
 
+<h3 class="vt"><span class="tag">1本目</span>猫探偵</h3>
+<p class="vsheet">受注シート①「猫探偵をメインに推しだした動画」／残したい印象「猫いなくなったしここに頼んでみよー」／雰囲気 <strong>☑アニメーション</strong></p>
+<p class="vwhy">空っぽのクッションから入り、飼い主の最悪の瞬間に寄せています。前半は夜の寒色、再会のカットから朝の暖色へ転換。</p>
+<div class="compare">
   <div class="card">
     <video controls preload="metadata" playsinline poster="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v1_poster.jpg">
       <source src="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v1b.mp4" type="video/mp4">
@@ -113,14 +125,29 @@ strong{color:var(--ink)}
       <p>この環境では埋め込み再生ができません。<a href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v1b.mp4">動画を直接開く</a></p>
     </video>
     <div class="body">
-      <span class="tag">1本目</span>
-      <h3>猫探偵</h3>
-      <p>受注シート①「猫探偵をメインに推しだした動画」／残したい印象「猫いなくなったしここに頼んでみよー」</p>
-      <p class="why">空っぽのクッションから入り、飼い主の最悪の瞬間に寄せています。前半は夜の寒色、再会のカットから朝の暖色へ転換。</p>
-    <a class="dl" href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v1b.mp4">動画を直接開く / 保存</a>
+      <span class="pick a">A ／ アニメ調</span>
+      <p>受注シートで唯一アニメーション指定があるのがこの1本目。指定どおりのテイストです。</p>
+      <a class="dl" href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v1b.mp4">動画を直接開く / 保存</a>
     </div>
   </div>
+  <div class="card">
+    <video controls preload="metadata" playsinline poster="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v1r_poster.jpg">
+      <source src="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v1rb.mp4" type="video/mp4">
+      <source src="videos/v1rb.mp4" type="video/mp4">
+      <p>この環境では埋め込み再生ができません。<a href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v1rb.mp4">動画を直接開く</a></p>
+    </video>
+    <div class="body">
+      <span class="pick b">B ／ 実写風</span>
+      <p>夜の捜索・聞き込みの緊張感が出る。再会カットの感情も強い。</p>
+      <a class="dl" href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v1rb.mp4">動画を直接開く / 保存</a>
+    </div>
+  </div>
+</div>
 
+<h3 class="vt"><span class="tag">2本目</span>猫シャンプー</h3>
+<p class="vsheet">受注シート②「猫のシャンプーをメインに推しだした動画」／残したい印象「猫のシャンプーここに頼んでみよー」／雰囲気 ☑広告系</p>
+<p class="vwhy">「猫って、お風呂に入れるの？」という素朴な疑問＝検討の入口から開幕。自宅の失敗をコミカルに描き、泡のカットだけ水色で抜いています。</p>
+<div class="compare">
   <div class="card">
     <video controls preload="metadata" playsinline poster="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v2_poster.jpg">
       <source src="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v2b.mp4" type="video/mp4">
@@ -128,14 +155,29 @@ strong{color:var(--ink)}
       <p>この環境では埋め込み再生ができません。<a href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v2b.mp4">動画を直接開く</a></p>
     </video>
     <div class="body">
-      <span class="tag">2本目</span>
-      <h3>猫シャンプー</h3>
-      <p>受注シート②「猫のシャンプーをメインに推しだした動画」／残したい印象「猫のシャンプーここに頼んでみよー」</p>
-      <p class="why">「猫って、お風呂に入れるの？」という素朴な疑問＝検討の入口から開幕。自宅の失敗をコミカルに描き、泡のカットだけ水色で抜いています。</p>
-    <a class="dl" href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v2b.mp4">動画を直接開く / 保存</a>
+      <span class="pick a">A ／ アニメ調</span>
+      <p>自宅での失敗シーンをコミカルに描けるのが利点。1本目と揃う。</p>
+      <a class="dl" href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v2b.mp4">動画を直接開く / 保存</a>
     </div>
   </div>
+  <div class="card">
+    <video controls preload="metadata" playsinline poster="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v2r_poster.jpg">
+      <source src="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v2rb.mp4" type="video/mp4">
+      <source src="videos/v2rb.mp4" type="video/mp4">
+      <p>この環境では埋め込み再生ができません。<a href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v2rb.mp4">動画を直接開く</a></p>
+    </video>
+    <div class="body">
+      <span class="pick b">B ／ 実写風</span>
+      <p>泡・濡れた毛・水滴の質感が出るので「実際にここで洗ってもらえる」が伝わる。</p>
+      <a class="dl" href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v2rb.mp4">動画を直接開く / 保存</a>
+    </div>
+  </div>
+</div>
 
+<h3 class="vt"><span class="tag">3本目</span>サービス全般</h3>
+<p class="vsheet">受注シート③「全般のサービスを紹介する動画」／残したい印象「猫でなんかあったらここ行こう」／雰囲気 ☑広告系</p>
+<p class="vwhy">4メニューをカットごとに差し色で区切り、保護猫活動は別枠として最後に置いています。</p>
+<div class="compare">
   <div class="card">
     <video controls preload="metadata" playsinline poster="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v3_poster.jpg">
       <source src="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v3b.mp4" type="video/mp4">
@@ -143,15 +185,28 @@ strong{color:var(--ink)}
       <p>この環境では埋め込み再生ができません。<a href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v3b.mp4">動画を直接開く</a></p>
     </video>
     <div class="body">
-      <span class="tag">3本目</span>
-      <h3>サービス全般</h3>
-      <p>受注シート③「全般のサービスを紹介する動画」／残したい印象「猫でなんかあったらここ行こう」</p>
-      <p class="why">4メニューをカットごとに差し色で区切り、保護猫活動は別枠として最後に置いています。</p>
+      <span class="pick a">A ／ アニメ調</span>
+      <p>4メニューをアイコン的に見せられるので一覧性が高い。</p>
       <a class="dl" href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v3b.mp4">動画を直接開く / 保存</a>
     </div>
   </div>
-
+  <div class="card">
+    <video controls preload="metadata" playsinline poster="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v3r_poster.jpg">
+      <source src="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v3rb.mp4" type="video/mp4">
+      <source src="videos/v3rb.mp4" type="video/mp4">
+      <p>この環境では埋め込み再生ができません。<a href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v3rb.mp4">動画を直接開く</a></p>
+    </video>
+    <div class="body">
+      <span class="pick b">B ／ 実写風</span>
+      <p>シッター・ホテルの「実際の預け先」感が出る。保護猫のカットも生々しさが出る。</p>
+      <a class="dl" href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v3rb.mp4">動画を直接開く / 保存</a>
+    </div>
+  </div>
 </div>
+
+<p style="color:var(--muted); font-size:.9rem">
+※ どちらかに統一しても、本ごとに変えても構いません。<strong>3本まとめてどちらで進めるかをご判断ください。</strong>
+</p>
 
 <h2>参考にした動画</h2>
 <p>受注シートの「現場で見せた動画」欄に記載されていた1本です。<strong>今回のモックはこれを起点にしています。</strong></p>
@@ -182,48 +237,6 @@ strong{color:var(--ink)}
   <p><strong>参考動画はこの1本だけです。</strong>受注シートに記載があったのがこれのみで、他に候補は提示されていません。
   8/24のディレクションでは、<strong>この猫版モックを見ていただいた上で「もっとこういう感じ」という方向を引き出す</strong>のが目的になります。</p>
 </div>
-
-<h2>2本目のテイスト比較（アニメ / 実写風）</h2>
-<div class="note warn">
-  <p><strong>受注シートで「アニメーション」にチェックが入っているのは1本目だけです。</strong>
-  2本目・3本目は「広告系」のみで、アニメーション指定がありません。
-  上のモックは3本ともアニメ調で作っているため、<strong>2本目を実写風でも作りました</strong>。
-  <strong>テロップ・尺・構成は1文字も変えていません</strong>（比較対象をテイストだけに絞るため）。</p>
-</div>
-
-<div class="compare">
-  <div class="card">
-    <video controls preload="metadata" playsinline poster="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v2_poster.jpg">
-      <source src="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v2b.mp4" type="video/mp4">
-      <source src="videos/v2b.mp4" type="video/mp4">
-      <p>この環境では埋め込み再生ができません。<a href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v2b.mp4">動画を直接開く</a></p>
-    </video>
-    <div class="body">
-      <span class="pick a">A ／ アニメ調</span>
-      <h3>3D CGアニメ</h3>
-      <p>1本目・3本目と揃うのでシリーズとして一番強い。自宅での失敗シーンをコミカルに描けるのが利点。</p>
-      <a class="dl" href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v2b.mp4">動画を直接開く / 保存</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <video controls preload="metadata" playsinline poster="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v2r_poster.jpg">
-      <source src="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v2rb.mp4" type="video/mp4">
-      <source src="videos/v2rb.mp4" type="video/mp4">
-      <p>この環境では埋め込み再生ができません。<a href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v2rb.mp4">動画を直接開く</a></p>
-    </video>
-    <div class="body">
-      <span class="pick b">B ／ 実写風</span>
-      <h3>実写風フォト</h3>
-      <p>泡・濡れた毛・水滴の質感が出るぶん「実際にここで洗ってもらえる」が伝わりやすい。シートの「広告系」に近いのはこちら。</p>
-      <a class="dl" href="https://cdn.jsdelivr.net/gh/hoshizaemonn/nekojoto-mock@main/videos/v2rb.mp4">動画を直接開く / 保存</a>
-    </div>
-  </div>
-</div>
-
-<p style="color:var(--muted); font-size:.9rem">
-※ 3本目も同様に実写風へ振ることができます。<strong>2本目でどちらを採るか決まれば、3本目はそれに合わせます。</strong>
-</p>
 
 <h2>なぜこの形にしたか</h2>
 
